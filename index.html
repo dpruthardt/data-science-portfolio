@@ -7,80 +7,117 @@
     <meta name="keywords" content="Data Science, Machine Learning, Portfolio, Projects">
     <title>My Data Science Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            background-color: #333;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 14px 20px;
-            display: block;
-        }
-        nav ul li a:hover {
-            background-color: #575757;
-        }
-        header {
-            background-color: #444;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 500px;
-            margin: auto;
-        }
-        form label {
-            font-weight: bold;
-        }
-        form input, form textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        form input[type="submit"]:hover {
-            background-color: #575757;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            header h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>My Data Science Portfolio</h1>
         <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="UnsupervisedL-Clustering-StockPortfolio.html">Project 7 Unsupervised Learning using Clusters for Stock Grouping</a></li>
-                <li><a href="WindTurbines-Classification-ModelTuning.html">Project 6 Model Tuning with Turbine Data</a></li>
-                <li><a href="EnsembleTechniques_EasyVisa.html">Project 5 Ensemble Techniques for Visa Approval</a></li>
-                <li><a href="SL-LogRegression-Classification_Hotels.html">Project 4 Machine Learning using Logistic Regression</a></li>
-                <li><a href="SupervisedLearning-LinearRegression_Pricing.html">Project 3 Machine Learning using Linear Regression</a></li>
-                <li><a href="BusinessStats-ABTesting-Subscribers.html">Project 2 AB Testing Subscribers</a></li>
-                <li><a href="EDA-FoodDeliveryAggregator.html">Project 1 Food Aggregator Analysis</a></li
+                <li>
+                    <a href="UnsupervisedL-Clustering-StockPortfolio.html">
+                        <img src="path-to-stock-image1.jpg" alt="Stock Clustering">
+                        Project 7 Unsupervised Learning using Clusters for Stock Grouping
+                    </a>
+                </li>
+                <li>
+                    <a href="WindTurbines-Classification-ModelTuning.html">
+                        <img src="path-to-stock-image2.jpg" alt="Wind Turbines Model Tuning">
+                        Project 6 Model Tuning with Turbine Data
+                    </a>
+                </li>
+                <li>
+                    <a href="EnsembleTechniques_EasyVisa.html">
+                        <img src="path-to-stock-image3.jpg" alt="Visa Approval Techniques">
+                        Project 5 Ensemble Techniques for Visa Approval
+                    </a>
+                </li>
+                <li>
+                    <a href="SL-LogRegression-Classification_Hotels.html">
+                        <img src="path-to-stock-image4.jpg" alt="Hotel Classification">
+                        Project 4 Machine Learning using Logistic Regression
+                    </a>
+                </li>
+                <li>
+                    <a href="SupervisedLearning-LinearRegression_Pricing.html">
+                        <img src="path-to-stock-image5.jpg" alt="Pricing Regression">
+                        Project 3 Machine Learning using Linear Regression
+                    </a>
+                </li>
+                <li>
+                    <a href="BusinessStats-ABTesting-Subscribers.html">
+                        <img src="path-to-stock-image6.jpg" alt="AB Testing Subscribers">
+                        Project 2 AB Testing Subscribers
+                    </a>
+                </li>
+                <li>
+                    <a href="EDA-FoodDeliveryAggregator.html">
+                        <img src="path-to-stock-image7.jpg" alt="Food Delivery Analysis">
+                        Project 1 Food Aggregator Analysis
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! Here you'll find some of my data science projects.</p>
+        </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section>
+            <h2>Search</h2>
+            <input type="text" id="search" placeholder="Search projects...">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Derek Ruthardt | <a href="https://twitter.com/yourprofile">Twitter</a> | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+    </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+    <script>
+        document.querySelector('h1').addEventListener('click', function() {
+            alert('Welcome to my Data Science Portfolio!');
+        });
+        document.querySelector('#search').addEventListener('input', function() {
+            // Implement search functionality here
+        });
+    </script>
+    <style>
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+        nav ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        nav ul li img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</body>
+</html>
