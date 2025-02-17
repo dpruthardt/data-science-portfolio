@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Derek Ruthardt's Data Science Portfolio featuring various machine learning and data analysis projects.">
+    <meta name="keywords" content="Data Science, Machine Learning, Portfolio, Projects">
     <title>My Data Science Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>My Data Science Portfolio</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="UnsupervisedL-Clustering-StockPortfolio.html">Project 7 Unsupervised Learning using Clusters for Stock Grouping</a></li>
                 <li><a href="WindTurbines-Classification-ModelTuning.html">Project 6 Model Tuning with Turbine Data</a></li>
@@ -26,9 +28,50 @@
             <h2>About Me</h2>
             <p>Welcome to my portfolio! Here you'll find some of my data science projects.</p>
         </section>
+        <section>
+            <h2>Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section>
+            <h2>Search</h2>
+            <input type="text" id="search" placeholder="Search projects...">
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Derek Ruthardt</p>
+        <p>&copy; 2025 Derek Ruthardt | <a href="https://twitter.com/yourprofile">Twitter</a> | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
     </footer>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+    <script>
+        document.querySelector('h1').addEventListener('click', function() {
+            alert('Welcome to my Data Science Portfolio!');
+        });
+        document.querySelector('#search').addEventListener('input', function() {
+            // Implement search functionality here
+        });
+    </script>
+    <style>
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </body>
 </html>
