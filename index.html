@@ -125,20 +125,40 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! Here you'll find some of my data science projects.</p>
-        </section>
-        <section class="centered">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Data Analysis</li>
-                <li>SQL</li>
-                <li>Visualization (Matplotlib, Seaborn)</li>
-            </ul>
-        </section>  
+       <style>
+    /* Existing CSS */
+    .skills-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    .skills-list li {
+        margin: 0 15px;
+        position: relative;
+    }
+    .skills-list li::before {
+        content: '\\2022';
+        color: #3498db;
+        display: inline-block;
+        width: 1em;
+        margin-right: 0.5em;
+        position: absolute;
+        left: -1.5em;
+    }
+</style>
+
+<section class="centered">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Data Analysis</li>
+        <li>SQL</li>
+        <li>Visualization (Matplotlib, Seaborn)</li>
+    </ul>
+</section>
+
     </main>
     <footer>
         <p>&copy; 2025 Derek Ruthardt | <a href="https://www.linkedin.com/in/derek-ruthardt">LinkedIn</a></p>
