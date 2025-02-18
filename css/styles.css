@@ -26,12 +26,14 @@ header h1 {
 }
 
 nav ul {
-    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Add this line to create two rows */
+    gap: 20px;
+    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
 }
+
 
 nav ul li {
     margin: 0 15px;
